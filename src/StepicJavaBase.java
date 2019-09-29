@@ -2,6 +2,10 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.function.DoubleUnaryOperator;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.XMLFormatter;
 
 public class StepicJavaBase {
     public static boolean isPalindrome(String text) {
@@ -11,11 +15,13 @@ public class StepicJavaBase {
             return true;
         return false;
     }
+
     public static BigInteger factorial(int n) {
         BigInteger ret = BigInteger.ONE;
         for (int i = 1; i <= n; ++i) ret = ret.multiply(BigInteger.valueOf(i));
         return ret;
     }
+
     public static int[] mergeArrays(int[] a1, int[] a2) {
         int[] res = new int[a1.length + a2.length];
         int posA = 0, posB = 0;
@@ -36,6 +42,7 @@ public class StepicJavaBase {
         }
         return res;
     }
+
     public static String printTextPerRole(String[] roles, String[] textLines) {
         int rolesSize = roles.length;
         int textLinesSize = textLines.length;
@@ -52,9 +59,6 @@ public class StepicJavaBase {
         }
         return answer.toString().substring(0,answer.length()-1);
     }
-
-
-
 
     public final class ComplexNumber {
         private final double re;
