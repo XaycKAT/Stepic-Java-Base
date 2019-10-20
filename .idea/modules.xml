@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Exceptions/Exceptions.iml" filepath="$PROJECT_DIR$/Exceptions/Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IOFiles/IOFiles.iml" filepath="$PROJECT_DIR$/IOFiles/IOFiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBaseStepic.iml" filepath="$PROJECT_DIR$/JavaBaseStepic.iml" />
       <module fileurl="file://$PROJECT_DIR$/TextAnalyzer/TextAnalyzer.iml" filepath="$PROJECT_DIR$/TextAnalyzer/TextAnalyzer.iml" />
     </modules>

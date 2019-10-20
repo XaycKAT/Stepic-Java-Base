@@ -103,7 +103,7 @@ public class Robots {
         RobotConnection getConnection();
     }
 
-    public class RobotConnectionException extends RuntimeException {
+    public static class RobotConnectionException extends RuntimeException {
 
         public RobotConnectionException(String message) {
             super(message);

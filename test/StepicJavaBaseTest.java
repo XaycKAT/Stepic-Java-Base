@@ -1,6 +1,5 @@
 import org.junit.Assert;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
 public class StepicJavaBaseTest {
@@ -72,41 +71,41 @@ public class StepicJavaBaseTest {
         Assert.assertEquals(expected1,actual1);
     }
 
-    @Test
-    public void moveRobot() {
-        StepicJavaBase.Robot robot = new StepicJavaBase.Robot(0,0, StepicJavaBase.Direction.UP);
-        StepicJavaBase.moveRobot(robot,0,0);
-        assertEquals("0 0",robot.getPosition());
-
-        robot.setPosition(1,1,"RIGHT");
-        StepicJavaBase.moveRobot(robot,3,0);
-        assertEquals("3 0",robot.getPosition());
-
-        robot.setPosition(-6,-3,"UP");
-        StepicJavaBase.moveRobot(robot,-3,0);
-        assertEquals("-3 0",robot.getPosition());
-
-        robot.setPosition(9,7,"UP");
-        StepicJavaBase.moveRobot(robot,3,-5);
-        assertEquals("3 -5",robot.getPosition());
-
-        robot.setPosition(10,-10,"LEFT");
-        StepicJavaBase.moveRobot(robot,-3,-5);
-        assertEquals("-3 -5",robot.getPosition());
-
-        robot.setPosition(1,1,"RIGHT");
-        StepicJavaBase.moveRobot(robot,1,1);
-        assertEquals("1 1",robot.getPosition());
-
-        robot.setPosition(1,1,"RIGHT");
-        StepicJavaBase.moveRobot(robot,1,7);
-        assertEquals("1 7",robot.getPosition());
-
-        robot.setPosition(-5,7,"RIGHT");
-        StepicJavaBase.moveRobot(robot,1,7);
-        assertEquals("1 7",robot.getPosition());
-    }
-
+//    @Test
+//    public void moveRobot() {
+//        StepicJavaBase.Robot robot = new StepicJavaBase.Robot(0,0, StepicJavaBase.Direction.UP);
+//        StepicJavaBase.moveRobot(robot,0,0);
+//        assertEquals("0 0",robot.getPosition());
+//
+//        robot.setPosition(1,1,"RIGHT");
+//        StepicJavaBase.moveRobot(robot,3,0);
+//        assertEquals("3 0",robot.getPosition());
+//
+//        robot.setPosition(-6,-3,"UP");
+//        StepicJavaBase.moveRobot(robot,-3,0);
+//        assertEquals("-3 0",robot.getPosition());
+//
+//        robot.setPosition(9,7,"UP");
+//        StepicJavaBase.moveRobot(robot,3,-5);
+//        assertEquals("3 -5",robot.getPosition());
+//
+//        robot.setPosition(10,-10,"LEFT");
+//        StepicJavaBase.moveRobot(robot,-3,-5);
+//        assertEquals("-3 -5",robot.getPosition());
+//
+//        robot.setPosition(1,1,"RIGHT");
+//        StepicJavaBase.moveRobot(robot,1,1);
+//        assertEquals("1 1",robot.getPosition());
+//
+//        robot.setPosition(1,1,"RIGHT");
+//        StepicJavaBase.moveRobot(robot,1,7);
+//        assertEquals("1 7",robot.getPosition());
+//
+//        robot.setPosition(-5,7,"RIGHT");
+//        StepicJavaBase.moveRobot(robot,1,7);
+//        assertEquals("1 7",robot.getPosition());
+//    }
+//
 
     @Test
     public void integrate() {
